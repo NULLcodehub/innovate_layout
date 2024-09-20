@@ -1,0 +1,42 @@
+
+.bg-div{
+    margin-top: 0;
+    height: 28.67vh;
+    background:#363636;
+    clip-path: ellipse(100% 100% at 50% 100%);
+    transform: rotate(180deg)
+    /* clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%) */
+}
+.box-div{
+    width: 100vw;
+    z-index: 10000000;
+    position: relative;
+    top: -80px;
+    
+
+}
+
+.box-div .box:nth-child(odd){
+
+    /* width: 300px;
+    height: 300px; */
+    /* background: #000; */
+    transition: all 0.5s linear;
+    transform-origin: center;
+}
+.box-div .box:nth-child(even){
+    
+    /* width: 260px;
+    height: 260px;
+    background: #ed6060; */
+    transition: all 1s forward;
+    transition: all 0.5s linear;
+    transform-origin: center;
+
+}
+
+.box-div .box:hover{
+    width: 400px;
+    height: 400px;
+    transition: all 1s forward;
+}
