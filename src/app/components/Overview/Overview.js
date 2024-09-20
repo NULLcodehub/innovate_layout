@@ -1,9 +1,9 @@
 'use client';
 import React, { useRef } from 'react';
 import Slider from 'react-slick';
-import './Overview.css'; // Ensure this file exists and contains your styles
+import './Overview.css'; 
 
-const CardSlider = () => {
+const Overview = () => {
   const sliderRef = useRef(null);
 
   const cardsData = [
@@ -48,4 +48,4 @@ const CardSlider = () => {
   );
 };
 
-export default CardSlider;
+export default Overview;

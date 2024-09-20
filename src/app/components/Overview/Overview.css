@@ -4,8 +4,8 @@
 
 .button-container {
   position: absolute;
-  bottom: 20px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed */
+  bottom: 20px; 
+  right: 20px; 
 }
 
 .prev-button, .next-button {
@@ -18,5 +18,5 @@
 }
 
 .prev-button:hover, .next-button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #0056b3;
 }
