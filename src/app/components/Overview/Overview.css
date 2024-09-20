@@ -1,66 +1,22 @@
-.swiper-container {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .swiper-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .swiper-slide {
-    flex-shrink: 0;
-    max-width: 20vw;
-    height: 50vh;
-    background-color: #000000;
-    border: 1px solid #ccc;
-    text-align: center;
-    line-height: 200px;
-    position: relative;
-  }
-  
-  .swiper-slide:not(.swiper-slide-active) {
-    transform: translateX(50px);
-    opacity: 0.8;
-    scale: 0.8; 
-  }
-  
-  .swiper-slide-active {
-    transform: translateX(0);
-    opacity: 1;
-    z-index: 1;
-    scale: 1.2;
-  }
-  
-  
-  .swiper-button-prev,
-  .swiper-button-next {
-    background-color: #007bff;
-    color: white;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    bottom: 20px; 
-    right: 10px; 
-    z-index: 10;
-    opacity: 0.8;
-  }
-  
+.slider-container {
+  position: relative;
+}
 
-  .swiper-button-prev {
-    right: 60px; 
-  }
-  
-  .swiper-button-next {
-    right: 10px;
-  }
-  
-  .swiper-button-prev:hover,
-  .swiper-button-next:hover {
-    opacity: 1;
-  }
-  
-  
+.button-container {
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+}
+
+.prev-button, .next-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev-button:hover, .next-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}

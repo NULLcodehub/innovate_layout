@@ -1,0 +1,24 @@
+.card .b1{
+
+    background: hsla(283, 76%, 60%, 1);
+
+background: linear-gradient(135deg, hsla(283, 76%, 60%, 1) 0%, hsla(266, 60%, 50%, 1) 100%);
+
+background: -moz-linear-gradient(135deg, hsla(283, 76%, 60%, 1) 0%, hsla(266, 60%, 50%, 1) 100%);
+
+background: -webkit-linear-gradient(135deg, hsla(283, 76%, 60%, 1) 0%, hsla(266, 60%, 50%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BC4DE7", endColorstr="#7735CC", GradientType=1 );
+    
+}
+.card .b2{
+    background: hsla(152, 100%, 50%, 1);
+
+background: linear-gradient(135deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(135deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(135deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00FF87", endColorstr="#60EFFF", GradientType=1 );
+}

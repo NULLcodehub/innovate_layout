@@ -1,41 +1,51 @@
 'use client';
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React, { useRef } from 'react';
+import Slider from 'react-slick';
+import './Overview.css'; // Ensure this file exists and contains your styles
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import './Overview.css';
+const CardSlider = () => {
+  const sliderRef = useRef(null);
 
-// import required modules
-import { Pagination, Navigation } from 'swiper/modules';
+  const cardsData = [
+    { title: "Card 1", description: "Description for Card 1" },
+    { title: "Card 2", description: "Description for Card 2" },
+    { title: "Card 3", description: "Description for Card 3" },
+    { title: "Card 4", description: "Description for Card 4" },
+    { title: "Card 5", description: "Description for Card 5" },
+  ];
 
-const Overview = () => {
-  const [swiperRef, setSwiperRef] = useState(null);
+  const settings = {
+    centerMode: true,
+    centerPadding: '10px',
+    slidesToShow: 3,
+    speed: 500,
+    focusOnSelect: true,
+  };
+
+  const goToNext = () => {
+    sliderRef.current.slickNext();
+  };
+
+  const goToPrev = () => {
+    sliderRef.current.slickPrev();
+  };
 
   return (
-    <>
-      <Swiper
-        onSwiper={setSwiperRef}
-        slidesPerView={3}
-        centeredSlides={true}
-        spaceBetween={30}
-        pagination={{
-          type: 'fraction',
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-      </Swiper>
-    </>
+    <div className="slider-container">
+      <Slider ref={sliderRef} {...settings} className='mx-10'>
+        {cardsData.map((card, index) => (
+          <div className="card w-[300px] h-[300px] flex gap-6 bg-slate-300 mx-4 " key={index}>
+            <h3>{card.title}</h3>
+            <p>{card.description}</p>
+          </div>
+        ))}
+      </Slider>
+      <div className="button-container">
+        <button className="prev-button" onClick={goToPrev}>Previous</button>
+        <button className="next-button" onClick={goToNext}>Next</button>
+      </div>
+    </div>
   );
 };
 
-export default Overview;
+export default CardSlider;

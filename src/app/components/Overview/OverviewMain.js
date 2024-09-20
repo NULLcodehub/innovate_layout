@@ -2,6 +2,7 @@
 import React, {useState} from 'react';
 
 import './OverviewMain.css'
+import Overview from './Overview';
 
 const OverviewMain = () => {
     const [bigDivColor, setBigDivColor] = useState("green");
@@ -13,8 +14,17 @@ const OverviewMain = () => {
   };
     return (
 
-        <main className='h-auto md:h-screen ' >
-            <div className="bg-div-overview"></div>
+        <main className='h-auto ' >
+
+            {/* <Overview/> */}
+
+            <div className='block md:w-5/12 ml-16   overview-text relative top-64'>
+                <h1 className='text-5xl mb-5  font-bold'>Overview</h1>
+                <p className='text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div className="bg-div-overview">
+                
+            </div>
             <section className=' flex flex-warp flex-col md:flex-row relative bottom-60'>
 
             

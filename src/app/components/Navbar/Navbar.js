@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { GoChevronDown } from "react-icons/go";
 import { FaSearch } from 'react-icons/fa';
 import { GoMultiSelect } from "react-icons/go";
+import { CiSearch } from "react-icons/ci";
 import './Navbar.css'
 
 const Navbar = () => {
@@ -36,9 +37,9 @@ const Navbar = () => {
               placeholder="Search"
               className="flex-1 p-2 outline-none border-none"
             />
-            <span className="p-2 text-white ">
-                <FaSearch className=''/>
-            </span>
+            <button className="p-2 text-white ">
+                <CiSearch className=''/>
+            </button>
           </div>
 
           <div className='block lg:hidden'>

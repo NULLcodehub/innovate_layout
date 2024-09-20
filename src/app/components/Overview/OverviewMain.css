@@ -5,3 +5,6 @@
     clip-path: ellipse(100% 100% at 50% 100%);
     transform: rotate(180deg)
 }
+.overview-text{
+    z-index: 10000000;
+}
