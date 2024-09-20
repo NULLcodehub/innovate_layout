@@ -4,7 +4,7 @@ import './Hero.css'
 const Hero = () => {
     return (
       <>
-        <section className='hero h-screen mb-10'>
+        <section className='hero h-auto lg:h-screen mb-10'>
           <div className="bg-div"></div>
 
           <div className="box-div  flex flex-wrap justify-center items-center gap-5 ">

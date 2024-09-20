@@ -13,7 +13,8 @@ module.exports = {
         customRed: '#C02424',
         customBlue: '#146FE8',
         customOrange: '#E76666',
-        customGreen:'#A0FCD9'
+        customGreen:'#A0FCD9',
+        Button:'#4000FF'
       },
     },
   },
