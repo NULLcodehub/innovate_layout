@@ -4,7 +4,7 @@ import Image from 'next/image'
 import OverviewImage from '@/app/Image/collagePhoto.jpg';
 const Signup = () => {
     return (
-        <section className='h-screen'>
+        <section className='h-auto lg:h-screen'>
             <div className='flex flex-wrap'>
                 <div className='overview-image p-16 flex justify-center items-center w-screen  lg:w-6/12'>
                     <Image src={OverviewImage}/>
