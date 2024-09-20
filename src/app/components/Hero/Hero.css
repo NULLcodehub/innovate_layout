@@ -1,7 +1,7 @@
 
 .bg-div{
     margin-top: 0;
-    height: 28.67vh;
+    height: 35.67vh;
     background:#363636;
     clip-path: ellipse(100% 100% at 50% 100%);
     transform: rotate(180deg)
