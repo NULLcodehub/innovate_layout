@@ -1,14 +1,18 @@
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
 import { GoChevronDown } from "react-icons/go";
 import { FaSearch } from 'react-icons/fa';
 import { GoMultiSelect } from "react-icons/go";
 import './Navbar.css'
 
 const Navbar = () => {
+
+    const [isActive,setIsActive]=useState(false)
+
     return (
       <>
         <section className="Navbar flex justify-around items-center">
-          <div className="nav-list hidden lg:flex">
+          <div className={`nav-list hidden lg:flex `}>
             <ul className="flex gap-16">
               <li className="nav-item">
                 Home <GoChevronDown />{" "}
@@ -38,9 +42,19 @@ const Navbar = () => {
           </div>
 
           <div className='block lg:hidden'>
-            <GoMultiSelect className='text-white size-8'/>
+            <GoMultiSelect className='text-white size-8'  onClick={()=>{setIsActive(!isActive)}}/>
           </div>
+
         </section>
+        <div className={`lg:hidden toogle-nav w-screen  ${isActive ? "block":"hidden"}`}>
+                <ul className='text-1xl	' onClick={()=>{setIsActive(!isActive)}}>
+                    <li>Home</li>
+                    <li>Event</li>
+                    <li>Contact</li>
+                    <li>Blog</li>
+                </ul>
+        </div>
+
       </>
     );
 };
