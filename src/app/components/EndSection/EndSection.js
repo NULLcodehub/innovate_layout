@@ -1,6 +1,6 @@
 'use client';
 import Card from './Card';
-import './BottomSection.css';
+import './EndSection.css';
 import { useState } from 'react';
 import { GoFilter } from "react-icons/go";
 
@@ -8,7 +8,7 @@ import Rectangle30 from '@/app/Image/Rectangle30.png'
 import Rectangle31 from '@/app/Image/Rectangle31.png'
 import Rectangle32 from '@/app/Image/Rectangle32.png'
 import Rectangle33 from '@/app/Image/Rectangle33.png'
-const BottomSection = () => {
+const EndSection = () => {
 
   const images = [
     Rectangle30,
@@ -104,4 +104,4 @@ const BottomSection = () => {
   );
 }
 
-export default BottomSection;
+export default EndSection;

@@ -5,7 +5,8 @@ import Signup from "./components/Signup/Signup";
 import Explore from "./components/Explore/Explore";
 import Overview from "./components/Overview/Overview";
 import OverviewMain from "./components/Overview/OverviewMain";
-import BottomSection from "./components/BottomSection/BottomSection";
+
+import EndSection from "./components/EndSection/EndSection";
 
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
         <Explore/>
         {/* <Overview/> */}
         <OverviewMain/>
-        <BottomSection/>
+        <EndSection/>
 
     </div>
   );
